@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MissionStall Games - Free PC Games Download</title>
+
+<!-- SEO -->
+<meta name="description" content="Download free PC games for low-end computers with installation guide.">
+<meta name="keywords" content="free pc games, low end pc games, missionstall">
+<meta name="author" content="MissionStall">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a0f;color:#fff;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+header{position:fixed;top:0;width:100%;background:rgba(10,10,15,0.95);padding:20px;backdrop-filter:blur(10px);z-index:1000;}
+nav{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:28px;font-weight:bold;color:#00d4ff;}
+.nav-links{display:flex;gap:25px;list-style:none;}
+.nav-links a{transition:0.3s;color:#fff;}
+.nav-links a:hover{color:#00d4ff;}
+.mobile-menu-btn{display:none;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;}
+section{padding:100px 20px;max-width:1200px;margin:0 auto;}
+.hero{margin-top:80px;text-align:center;}
+.hero h1{font-size:48px;background:linear-gradient(45deg,#00d4ff,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;}
+.hero p{font-size:18px;color:#aaa;margin-bottom:30px;}
+.search-box{display:flex;max-width:600px;margin:0 auto;gap:10px;}
+.search-box input{flex:1;padding:12px 20px;border-radius:50px;border:none;background:rgba(255,255,255,0.1);color:#fff;}
+.search-box input::placeholder{color:#888;}
+.btn{padding:12px 25px;border:none;border-radius:50px;background:linear-gradient(45deg,#00d4ff,#0099cc);color:#fff;cursor:pointer;transition:0.3s;}
+.btn:hover{transform:scale(1.05);}
+.section-title{text-align:center;font-size:32px;margin-bottom:40px;}
+.categories{display:flex;gap:10px;justify-content:center;margin-bottom:40px;flex-wrap:wrap;}
+.category-btn{padding:10px 25px;border:2px solid rgba(0,212,255,0.3);border-radius:25px;background:transparent;color:#fff;cursor:pointer;transition:0.3s;}
+.category-btn.active,.category-btn:hover{background:#00d4ff;border-color:#00d4ff;}
+.games-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:25px;}
+.game-card{background:rgba(255,255,255,0.05);border-radius:15px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);transition:0.3s;}
+.game-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,212,255,0.2);}
+.game-image{height:180px;overflow:hidden;}
+.game-image img{width:100%;height:100%;object-fit:cover;}
+.game-info{padding:15px;}
+.game-title{color:#00d4ff;font-size:20px;margin-bottom:8px;}
+.game-meta{display:flex;gap:10px;font-size:14px;color:#888;margin-bottom:8px;}
+.game-desc{font-size:14px;color:#aaa;margin-bottom:12px;}
+.download-btn{display:block;text-align:center;padding:10px;border:none;border-radius:10px;background:linear-gradient(45deg,#ff6b6b,#ee5a5a);color:#fff;transition:0.3s;}
+.download-btn:hover{opacity:0.9;}
+footer{background:rgba(0,0,0,0.3);padding:40px 20px;text-align:center;margin-top:50px;color:#aaa;font-size:14px;}
+.info-section{background:rgba(255,255,255,0.03);border-radius:15px;padding:25px;margin-bottom:50px;}
+h3{margin-bottom:15px;color:#00d4ff;}
+
+@media(max-width:768px){
+.nav-links{display:none;flex-direction:column;position:absolute;top:80px;right:20px;background:#111;padding:20px;border-radius:10px;}
+.mobile-menu-btn{display:block;}
+.search-box{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#" class="logo">MissionStall</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#games">PC Games</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button class="mobile-menu-btn">&#9776;</button>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Download Free PC Games</h1>
+<p>100% Working Games with Installation Guides</p>
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search games...">
+<button class="btn" onclick="searchGames()">Search</button>
+</div>
+</section>
+
+<section id="games">
+<h2 class="section-title">Popular Games</h2>
+
+<div class="games-grid" id="gamesGrid">
+
+<div class="game-card" data-category="action">
+<div class="game-image">
+<img src="gta.jpg" alt="GTA Game">
+</div>
+<div class="game-info">
+<h3 class="game-title">GTA San Andreas</h3>
+<div class="game-meta"><span>📅 2004</span><span>💾 4.5 GB</span></div>
+<p class="game-desc">Classic open world action game.</p>
+<a href="#" target="_blank" class="download-btn">⬇ Download Now</a>
+</div>
+</div>
+
+<div class="game-card" data-category="racing">
+<div class="game-image">
+<img src="nfs.jpg" alt="NFS Game">
+</div>
+<div class="game-info">
+<h3 class="game-title">Need for Speed Most Wanted</h3>
+<div class="game-meta"><span>📅 2005</span><span>💾 2.8 GB</span></div>
+<p class="game-desc">Best racing game for low end PC.</p>
+<a href="#" target="_blank" class="download-btn">⬇ Download Now</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="info-section">
+<h3>About MissionStall</h3>
+<p>MissionStall is a PC games platform providing installation guides and information for gamers.</p>
+</section>
+
+<section id="contact" class="info-section">
+<h3>Contact</h3>
+<p>Email: support@missionstall.com</p>
+</section>
+
+<footer>
+<p>&copy; 2024 MissionStall Games. All rights reserved.</p>
+</footer>
+
+<script>
+
+// Mobile Menu Toggle
+document.querySelector(".mobile-menu-btn").addEventListener("click", function(){
+const nav=document.querySelector(".nav-links");
+nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+});
+
+// Search Function
+function searchGames(){
+const term=document.getElementById("searchInput").value.toLowerCase();
+const games=document.querySelectorAll(".game-card");
+let found=false;
+games.forEach(game=>{
+const title=game.querySelector(".game-title").textContent.toLowerCase();
+if(title.includes(term)||term===""){
+game.style.display="block";
+found=true;
+}else{
+game.style.display="none";
+}
+});
+if(!found) alert("No games found!");
+}
+
+</script>
+
+</body>
+                                                      </html>
